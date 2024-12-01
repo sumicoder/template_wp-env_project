@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@use "./variable" as *;
+
+// ================================================
+// メディアクエリとブレークポイントの設定
+// ================================================
+
+//ブレイクポイント(デザインによって異なる)
+$breakpoints: (
+    sm: 480,
+    md: 768,
+    lg: 1040,
+    xl: 1280,
+    artboard: $artboard,
+    xxl: 1800,
+    mobile: 767,
+    pc: 768,
+);
+
+//メディアクエリー
+$mediaquerys: (
+    "sm": "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+    "md": "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+    "lg": "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+    "xl": "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+    "artboard": "screen and (min-width: #{map-get($breakpoints,'artboard')}px)",
+    "xxl": "screen and (min-width: #{map-get($breakpoints,'xxl')}px)",
+    "mobile": "screen and (min-width: #{map-get($breakpoints,'mobile')}px)",
+    "pc": "screen and (min-width: #{map-get($breakpoints,'pc')}px)",
+) !default;
+
+// @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
+@mixin mq($mediaquery: md) {
+    @media #{map-get($mediaquerys, $mediaquery)} {
+        @content;
+    }
+}

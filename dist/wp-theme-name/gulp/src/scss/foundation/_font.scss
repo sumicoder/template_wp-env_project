@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* ===============================================
+# MARK: font - Noto Sans JP - 400/500/600/700
+=============================================== */
+@font-face {
+    font-family: 'NotoSansJP';
+    ascent-override: 98%;
+	src: url(../font/NotoSansJP-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansJP';
+    ascent-override: 98%;
+	src: url(../font/NotoSansJP-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansJP';
+    ascent-override: 98%;
+	src: url(../font/NotoSansJP-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansJP';
+    ascent-override: 98%;
+	src: url(../font/NotoSansJP-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansJP';
+    ascent-override: 98%;
+	src: url(../font/NotoSansJP-Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ===============================================
+# MARK: font - NotoSerifJP - 400/500/600/700
+=============================================== */
+@font-face {
+    font-family: 'NotoSerifJP';
+	src: url(../font/NotoSerifJP-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifJP';
+	src: url(../font/NotoSerifJP-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifJP';
+	src: url(../font/NotoSerifJP-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifJP';
+	src: url(../font/NotoSerifJP-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ===============================================
+# MARK: font - DMSans - 400/500/600/700
+=============================================== */
+@font-face {
+    font-family: 'DMSans';
+	src: url(../font/DMSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSans';
+	src: url(../font/DMSans-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSans';
+	src: url(../font/DMSans-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSans';
+	src: url(../font/DMSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --baseFont: 'NotoSansJP', sans-serif;
+    --enText: "DMSans", sans-serif;
+    --accentFont: "NotoSerifJP", sans-serif;
+}
