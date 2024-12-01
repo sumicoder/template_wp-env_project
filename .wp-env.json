@@ -1,0 +1,19 @@
+{
+    "core": null,
+    "phpVersion": null,
+    "plugins": [],
+    "themes": [],
+    "port": 12345,
+    "env": {
+        "tests": {
+            "port": 12346
+        }
+    },
+    "config": {
+        "WP_DEBUG": true
+    },
+    "mappings": {
+        "wp-content/themes/d-house-wp-theme/": "./dist/wp-theme-name/",
+        "sql": "./sql"
+    }
+}
