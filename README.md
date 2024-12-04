@@ -16,10 +16,32 @@ wp-envを使用したテンプレート
 ```
 
 ## 立ち上げ
-1. ルートディレクトリで`npm i` - （node_moduleインストール）
+1. ルートディレクトリで`npm i` - （**wp-env関連の**node_moduleインストール）
 2. ルートディレクトリで`npm run start` - （DockerにWordPress）インストール
+3. `cd ./dist/wp-theme-name/gulp`でgulpディレクトリに移動
+4. `npm i`**gulp関連の**node_moduleインストール
+5. `npx gulp dev`でgulp起動
 
 ## WordPressログイン
 ユーザー名：`admin`
 
 パスワード：`password`
+
+## よく使うコマンド
+### ルートディレクトリ
+- Docker起動
+```
+npm run start
+```
+- Docker停止
+```
+npm run stop
+```
+- データベースエクスポート
+```
+npm run export
+```
+- データベースインポート
+```
+npm run import
+```
