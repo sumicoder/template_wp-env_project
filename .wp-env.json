@@ -1,22 +1,16 @@
 {
-    "core": null,
+    "core": "https://ja.wordpress.org/latest-ja.zip",
     "phpVersion": null,
     "plugins": [],
     "themes": [],
-    "env": {
-        "development": {
-            "port": 54321,
-            "mysqlPort": 53306
-        }
-    },
     "config": {
         "WP_DEBUG": true
     },
     "mappings": {
         "wp-content/themes/wp-theme-name/": "./dist/wp-theme-name/",
-		"wp-content/plugins/": "./dist/plugins/",
-		"wp-content/uploads/": "./dist/uploads/",
+        "wp-content/plugins/": "./dist/plugins/",
+        "wp-content/uploads/": "./dist/uploads/",
         "sql": "./sql/",
-        ".htaccess": "./.htaccess"
+        ".htaccess": ".htaccess"
     }
 }

@@ -2,6 +2,7 @@
 wp-envを使用したテンプレート
 
 # 事前準備
+1. Docker Desktop起動
 1. `.wp-env.json`のポート番号部分を変更
 ```
 "port": 54321,
