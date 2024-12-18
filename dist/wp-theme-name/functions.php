@@ -1,4 +1,4 @@
 <?php
-require_once('functions/setup.php');
-require_once('functions/posttype.php');
-require_once('functions/security.php');
+require_once('init/setup.php');
+require_once('init/posttype.php');
+require_once('init/security.php');
