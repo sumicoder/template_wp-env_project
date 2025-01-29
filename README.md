@@ -36,7 +36,7 @@ WP_THEME_NAME=wp-theme-name
 
 ## WordPress ログイン
 
-サイトURL：`http://localhost:12345/`
+サイト URL：`http://localhost:12345/`
 
 管理画面 URL：`http://localhost:12345/wp-admin/`
 
@@ -66,7 +66,5 @@ npm run export
 npm run import
 ```
 
-:::note warn
-注意
-`npm run start`や`npm run update`をすると`.wp-env.json`の内容で WordPress がインストールされるので、初期テーマなどが再度インストールされます。
-:::
+> 注意
+> `npm run start`や`npm run update`をすると`.wp-env.json`の内容で WordPress がインストールされるので、初期テーマなどが再度インストールされます。
