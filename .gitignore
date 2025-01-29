@@ -2,7 +2,7 @@ node_modules
 /.vscode
 .env
 package-lock.json
-/dist/wp-theme-name/assets/css
-/dist/wp-theme-name/assets/js
-/dist/wp-theme-name/assets/images
+/dist/public-site-wordpress-theme/assets/css
+/dist/public-site-wordpress-theme/assets/js
+/dist/public-site-wordpress-theme/assets/images
 .wp-env.json
