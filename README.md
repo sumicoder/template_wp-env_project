@@ -25,6 +25,8 @@ WP_THEME_NAME=wp-theme-name
 
 ## 立ち上げ
 
+### wp-env の起動
+
 1. ルートディレクトリで`npm i`（**wp-env 関連の**node_module インストール）
 2. ルートディレクトリで`npm run env:init`
 
@@ -34,7 +36,18 @@ WP_THEME_NAME=wp-theme-name
 2. `npm i`**gulp 関連の**node_module インストール
 3. `npx gulp dev`で Gulp 起動
 
+### ２回目以降の起動方法
+
+1. Docker Desktop 起動
+2. Docker Containers の中にある該当の Name を起動する
+3. 更新がある場合
+    - Git から更新内容をプルする
+    - `npm run import`でデータベースを更新する
+4. タスクランナーなどの起動
+
 ## WordPress ログイン
+
+### wp-env(Docker)側の URL
 
 サイト URL：`http://localhost:12345/`
 
@@ -44,9 +57,11 @@ WP_THEME_NAME=wp-theme-name
 
 パスワード：`password`
 
-## よく使うコマンド
+### タスクランナーがある場合はそれに準ずる
 
-### ルートディレクトリ
+例：`http://localhost:3000/`
+
+## よく使うコマンド
 
 -   初回起動
 
@@ -68,3 +83,9 @@ npm run import
 
 > 注意
 > `npm run start`や`npm run update`をすると`.wp-env.json`の内容で WordPress がインストールされるので、初期テーマなどが再度インストールされます。
+
+### Docker コンテナの名前変更
+
+```
+# docker rename old_container_name new_container_name
+```
