@@ -10,14 +10,14 @@ wp-env を使用したテンプレート
 2. `.env`を作成（`.env.sample`を参照）
 3. `.env`の環境変数を変更
 
-```:.env
+```.env:.env
 WP_THEME_NAME=wp-theme-name
 ```
 
 4. `/dist/`にあるテーマファイル名を環境変数に合わせる
 5. `package.json`にあるテーマファイル名を環境変数に合わせる
 
-```
+```json:package.json
 "env:init": "node generate-wp-env.js && wp-env start && wp-env run cli wp theme activate wp-theme-name && wp-env run cli wp theme delete --all && wp-env run cli wp option update timezone_string 'Asia/Tokyo'"
 ```
 
