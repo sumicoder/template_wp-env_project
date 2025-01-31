@@ -23,6 +23,16 @@ WP_THEME_NAME=wp-theme-name
 
 ↑`&& wp-env run cli wp theme activate wp-theme-name`の`wp-theme-name`の部分
 
+6. `.gitignore`の除外ディレクトリを環境変数に合わせる
+
+```.gitignore
+/dist/wp-theme-name/assets/css
+/dist/wp-theme-name/assets/js
+/dist/wp-theme-name/assets/images
+```
+
+↑`/wp-theme-name/`の部分
+
 ## 立ち上げ
 
 ### wp-env の起動

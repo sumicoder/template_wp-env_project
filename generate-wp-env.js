@@ -3,10 +3,9 @@ require('dotenv').config();
 const wpThemeName = process.env.WP_THEME_NAME;
 
 if (!wpThemeName) {
-    console.error("❌ Error: WP_THEME_NAME is not set in .env file");
+    console.error('❌ Error: WP_THEME_NAME is not set in .env file');
     process.exit(1);
 }
-
 
 const wpEnvConfig = {
     core: 'https://ja.wordpress.org/latest-ja.zip',
