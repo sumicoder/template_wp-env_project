@@ -5,4 +5,3 @@ package-lock.json
 /dist/wp-theme-name/assets/css
 /dist/wp-theme-name/assets/js
 /dist/wp-theme-name/assets/images
-.wp-env.json
